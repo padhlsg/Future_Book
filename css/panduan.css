@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url("../img/backgroundpanduan.jpg");
+  background-size: cover;
+  background-color: #9c9c9c;
+  background-blend-mode: lighten;
+}
+
+.back {
+  margin: 30px 10px;
+  z-index: 99;
+  position: relative;
+}
+
+.back a {
+  font-size: 20px;
+  background-color: gray;
+  text-decoration: none;
+  color: black;
+  padding: 20px;
+}
+
+.container {
+  margin: 100px 0;
+  padding: 40px 0;
+  border: 1px dotted black;
+  width: 800px;
+  min-width: 100%;
+  border-right: none;
+}
+
+.judul {
+  margin-left: 20px;
+}
+
+.judul p {
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+ol {
+  list-style-type: lower-alpha;
+  margin-left: 30px;
+}
+
+ol li {
+  margin: 20px 0;
+  font-size: 20px;
+}

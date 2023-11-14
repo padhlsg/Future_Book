@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap");
+
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #ccc;
+  margin: 5px;
+  padding: 5px 10px;
+  font-size: 18px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a:hover {
+  color: #fff;
+}
+
+.hero {
+  background: url("../img/background(home).jpg");
+  background-size: cover;
+  height: 400px;
+  background-attachment: fixed;
+}
+
+.container {
+  width: 85%;
+  margin: 0 10%;
+}
+
+.menu {
+  width: 100%;
+  display: flex;
+  left: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.logo {
+  font-size: 1.4em;
+  font-weight: 600;
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+  margin: 10px 1.5rem;
+}
+
+.dropdown > a {
+  display: flex;
+  align-items: center;
+}
+
+.dropdown > a::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-top: 2px solid #ccc;
+  border-right: 2px solid #ccc;
+  position: absolute;
+  right: 0px;
+  transform: rotate(135deg);
+  align-self: center;
+  transition: 0.5s;
+}
+
+.drop {
+  display: none;
+  position: absolute;
+  background-color: #000000;
+  border-radius: 5px 5px 5px;
+  width: 250px;
+}
+
+.drop a {
+  line-height: 20px;
+  display: block;
+  color: #ffffff;
+  position: relative;
+  font-size: 15px;
+}
+
+.drop a:hover,
+.dropTwo > a:hover,
+.more a:hover {
+  color: #000;
+  background-color: rgb(221, 253, 248);
+  transition: all 0.5s;
+}
+
+.dropdown:hover .drop {
+  display: block;
+}
+
+/*-----------*/
+
+.profile {
+  display: inline-block;
+  position: relative;
+}
+
+.profile a i p {
+  display: inline-block;
+  margin: 0 0 0 13px;
+  position: relative;
+  font-size: 18px;
+  bottom: 3px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.profile i:hover {
+  color: rgb(83, 83, 83);
+  transition: 0.5s;
+}
+
+.profile i {
+  transition: 0.5s;
+}
+
+.profile i p {
+  color: white;
+}
+
+.profile a i {
+  display: inline-block;
+}
+
+.container .title {
+  margin: 3rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.container .title h1 {
+  margin: 0 0;
+  color: white;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 50px;
+}
+
+.container .title p {
+  color: #f1f1f1;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+/* Kategori */
+
+#kategori {
+  min-height: 720px;
+  display: flex;
+}
+
+.container-buku {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#kategori hr {
+  border: 5px black solid;
+}
+
+#dropdown-kategori {
+  margin-left: 50px;
+  color: black;
+}
+
+#dropdown-kategori a {
+  color: black;
+}
+
+#dropdown-kategori > a::after {
+  color: black;
+  border-top: 2px solid #000000;
+  border-right: 2px solid #000000;
+}
+
+#dropdown-kategori .drop {
+  width: 150px;
+}
+
+#dropdown-kategori .drop a {
+  color: white;
+}
+
+#dropdown-kategori .drop a:hover {
+  color: black;
+  transition: all 0.5s;
+}
+
+.judul-pelajaran {
+  font-size: 20px;
+}
+
+.buku-buku {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.buku {
+  display: flex;
+  flex-direction: column;
+  margin: 0 30px;
+}
+
+.buku img {
+  width: 120px;
+  border: 1px solid black;
+}
+
+.buku a {
+  background-color: black;
+  color: white;
+  text-align: center;
+  display: flex;
+  margin: 20px auto;
+  padding: 10px;
+  width: 100px;
+  font-size: 15px;
+  justify-content: center;
+  border-radius: 100px;
+  transition: all 0.5s;
+  border: 1px solid;
+  font-weight: normal;
+}
+.buku a:hover {
+  color: black;
+  background-color: #ffffff;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+    margin: 0 0;
+  }
+
+  .dropdown {
+    margin-right: 10%;
+  }
+
+  .menu {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    width: 100%;
+    margin: 0 0;
+  }
+
+  .menu {
+    width: 0;
+    margin-left: 0;
+  }
+}

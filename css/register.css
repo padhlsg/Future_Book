@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Phudu:wght@400;600&family=Poppins:wght@100;400&family=Source+Code+Pro:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("../img/background2.jpg") #00000070;
+  background-blend-mode: darken;
+}
+
+.judul {
+  margin: 20px 0;
+}
+
+.judul p {
+  font-size: 30px;
+  font-style: italic;
+  font-weight: light;
+}
+
+.container {
+  max-width: 600px;
+  margin: 120px auto 0 auto;
+  padding: 30px 60px;
+  background-color: #f1f1f1;
+  border-radius: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin: 5px 0;
+  padding: 10px 10px;
+  border-radius: 5px;
+  border: 1px solid #000000;
+  background-color: #d9d9d9;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-between;
+  justify-content: space-around;
+}
+
+input[type="submit"] {
+  width: 30%;
+  font-size: 20px;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+a {
+  margin: 5px 0;
+  padding: 1px 10px;
+  border-radius: 5px;
+  border: 1px solid #000000;
+  width: 30%;
+  bottom: 100px;
+  background-color: #d9d9d9;
+  text-align: center;
+  border-radius: 100px;
+}
+
+input:focus {
+  outline: none;
+}

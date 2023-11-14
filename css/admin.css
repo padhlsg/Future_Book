@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Phudu:wght@400;600&family=Poppins:wght@100;400&family=Source+Code+Pro:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  height: 1120px;
+}
+
+.sidebar {
+  background-color: #65451f;
+  width: 300px;
+  height: 645px;
+  position: fixed;
+  padding: 3rem 20px;
+}
+
+.container-sidebar {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+}
+
+.title p {
+  font-size: 30px;
+  color: #0e0e0e;
+  font-style: italic;
+}
+
+.sidebar-menu {
+  margin-top: 50px;
+}
+
+.sidebar-menu ul {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.sidebar-menu ul li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.sidebar-menu ul li a {
+  color: #0e0e0e;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.sidebar-menu ul li a:hover {
+  color: #1a1a1a;
+}
+
+.container-buku {
+  width: 80%;
+  display: flex;
+  justify-content: end;
+  position: relative;
+  top: 40px;
+}
+
+.container-buku table {
+  border: 1px solid;
+  padding: 10px 10px;
+}
+
+.container-buku table thead tr th {
+  padding: 10px;
+}
